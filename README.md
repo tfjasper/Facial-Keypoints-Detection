@@ -9,7 +9,7 @@ The objective of this task is to predict keypoint positions on face images. This
 
 Detecing facial keypoints is a very challenging problem.  Facial features vary greatly from one individual to another, and even for a single individual, there is a large amount of variation due to 3D pose, size, position, viewing angle, and illumination conditions. Computer vision research has come a long way in addressing these difficulties, but there remain many opportunities for improvement.
 
-The data set for this competition was graciously provided by **Dr. Yoshua Bengio** of the University of Montreal.
+The data set for this competition was graciously provided by [**Dr. Yoshua Bengio**](http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html) of the University of Montreal.
 
 ## Training and testing data:
 
