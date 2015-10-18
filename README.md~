@@ -9,7 +9,7 @@ The objective of this task is to predict keypoint positions on face images. This
 
 Detecing facial keypoints is a very challenging problem.  Facial features vary greatly from one individual to another, and even for a single individual, there is a large amount of variation due to 3D pose, size, position, viewing angle, and illumination conditions. Computer vision research has come a long way in addressing these difficulties, but there remain many opportunities for improvement.
 
-The data set for this competition was graciously provided by **Dr. Yoshua Bengio** of the University of Montreal.
+The data set for this competition was graciously provided by *Dr. Yoshua Bengio* of the University of Montreal.
 
 ## Training and testing data:
 
@@ -31,14 +31,4 @@ Each predicted keypoint is specified by an (x,y) real-valued pair in the space o
 * mouth_center_top_lip;
 * mouth_center_bottom_lip.
 
-Left and right here refers to the point of view of the subject.
 
-In some examples, some of the target keypoint positions are misssing (encoded as missing entries in the csv, i.e., with nothing between two commas).
-
-The input image is given in the last field of the data files, and consists of a list of pixels (ordered by row), as integers in (0,255). The images are 96x96 pixels.
-
-### Data files:
-
-* **training.csv**: list of training 7049 images. Each row contains the (x,y) coordinates for 15 keypoints, and image data as row-ordered list of pixels;
-* **test.csv**: list of 1783 test images. Each row contains ImageId and image data as row-ordered list of pixels;
-* **submissionFileFormat.csv**: list of 27124 keypoints to predict. Each row contains a RowId, ImageId, FeatureName, Location. FeatureName are "left_eye_center_x," "right_eyebrow_outer_end_y," etc. Location is what you need to predict. 
