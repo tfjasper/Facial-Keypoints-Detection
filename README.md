@@ -49,11 +49,12 @@ Those files mentioned above are large sized files; so, none of **training.csv**,
 
 ### Updated data files:
 
-* **intro.py**: this python script takes .csv formatted files **training.csv** and **test.csv** which are extracted from **training.zip**, **test.zip**, and parses into different matrices:
+* **intro.py**: this python script takes *.csv* formatted files **training.csv** and **test.csv** which are extracted from **training.zip**, **test.zip**, and parses into different matrices:
   * **trainData.csv**: list of training 7049 images without 15 keypoints. It is just images vs. whole 96x96 coordinates. Since the size is large, it is not here;
   * **testData.csv**: list of 1783 test images. Each row contains ImageId and image data as row-ordered list of pixels. Since the size is large, it is not here;
   * **LabelName.csv**: the list of names for keypoints;
-  * **trainLabel.csv**: list of labels for 7049 training images. They are just *(x, y)* coordinates for 15 keypoints.
+  * **trainLabel.csv**: list of labels for 7049 training images. They are just *(x, y)* coordinates for 15 keypoints;
+  * **testID.csv**: list of image ID from **test.csv**.
 * **data_to_img.py**: this python script takes **trainData.csv** and **testData.csv**, and can display and save any picture from them. From which data to choose, which picture in the data to choose, which color you want for background are depending on your choices; so, yes, this is interactive script.
 
 The only things left for you to do are just to download *.zip* files from [here](https://www.kaggle.com/c/facial-keypoints-detection/data), extract *.csv* files out of them, run **intro.py** and **data_to_img.py**.
